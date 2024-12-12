@@ -1,0 +1,12 @@
+[package]
+name = "connect_sqlite"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+futures = "0.3.18"
+async-std = { version = "1.6", features = ["attributes"] }
+sqlx = { version = "0.5.9", features = [
+    "runtime-async-std-native-tls",
+    "sqlite",
+] }
